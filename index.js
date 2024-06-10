@@ -248,6 +248,60 @@ introducimos un 5, realizará esta operación 5*4*3*2*1=120.*/
 //     rl.close();
 // });
 
-// RETO 9
+// RETO 10
 
-//
+// Crea un array de números de un tamaño pasado por prompt, el array contendrá
+// números aleatorios primos entre los números deseados, por último, nos indica cuál es el
+// mayor de todos. Haz un método para comprobar que el número aleatorio es primo, puedes
+// hacer todos los métodos que necesites.
+
+// const readline = require('readline');
+
+// function generarRandom(min, max) {
+//     return Math.floor(Math.random() * (max - min + 1)) + min;
+// }
+
+// function esPrimo(num) {
+//     if (num < 2) {
+//         return false;
+//     }
+
+//     for (let i = 2; i < num; i++) {
+//         if (num % i === 0) {
+//             return false;
+//         }
+//     }
+
+//     return true;
+// }
+
+// function generarArrayPrimos(tamano, min, max) {
+//     let primos = [];
+
+//     while (primos.length < tamano) {
+//         let num = generarRandom(min, max);
+
+//         if(esPrimo(num)) {
+//             primos.push(num);
+//         }
+//     }
+
+//     return primos;
+// }
+
+// const rl = readline.createInterface({
+//     input: process.stdin,
+//     output: process.stdout
+// });
+
+// rl.question('Introduce el tamaño del array: ', (tamaño) => {
+//     rl.question('Introduce el valor mínimo: ', (min) => {
+//         rl.question('Introduce el valor máximo: ', (max) => {
+//             let arr = generarArrayPrimos(parseInt(tamaño), parseInt(min), parseInt(max));
+//             console.log(`El array de números primos es: ${arr}`);
+//             console.log(`El número primo mayor en el array es: ${Math.max(...arr)}`);
+//             rl.close();
+//         });
+//     });
+// });
+
